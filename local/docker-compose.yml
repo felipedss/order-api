@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  postgres_order_api:
+    container_name: postgres_order_api
+    image: postgres:12.2
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: order_db
+    ports:
+      - "5432:5432"
